@@ -1,0 +1,199 @@
+// ==========================================================================
+// Theme Style Main
+// ==========================================================================
+
+/*!
+Theme Name: Gabriela Cotnesini
+Author URI: https://github.com/IagoGoncalves
+Description: Odin main stylesheet.
+Author: the Odin team
+Author URI: http://wpod.in/#colaboradores
+*/
+
+@import "variables",
+	"bootstrap/bootstrap",
+	"wordpress/wordpress",
+	"odin/core",
+	"layout",
+	url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"),
+	url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
+body {
+	font-family: "Raleway", sans-serif;
+}
+$rosa-escuro: #dcb4a0;
+$rosa: #fce9df;
+$preto: #26272a;
+$cinza-escuro: #848484;
+$cinza: #f1f1f1;
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: $rosa;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px; 
+    background: $rosa-escuro; 
+}
+h2 {
+	color: $preto;
+	font-size: 80px;
+	font-family: "Lora", serif;
+}
+h3 {
+    color: $preto;
+	font-size: 48px;
+}
+h4 {
+	color: $preto;
+	font-size: 32px;
+	font-family: "Lora", serif;
+}
+h5 {
+	color: $rosa-escuro;
+	font-size: 24px;
+	font-family: "Lora", serif;
+}
+p{
+	color: $cinza-escuro;
+	font-size: 20px;
+}
+.align{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main{
+	padding-top: 99px;
+}
+header{
+	padding: 0 140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	background-color: #fff;
+	width: 100%;
+	div{
+		padding: 12px 0;
+		ul{
+			display: flex;
+			margin-left: 90px;
+			li{
+				display: flex;
+				align-items: center;
+				&:before{
+					content: '';
+					background: $rosa;
+					display: block;
+					border-radius: 50%;
+					width: 6px;
+					height: 6px;
+				}
+				a{
+					margin: 0 27px;
+					font-size: 20px;
+					font-weight: 500;
+					color: $preto;
+					transition: all .2s;
+					&:hover{
+						transition: all .2s;
+						color: $rosa-escuro;
+						text-decoration: none;
+					}
+				}
+				&:nth-child(1){
+					&:before{
+						width: 0px;
+						height: 0px;
+					}
+					a{
+						margin-left: 0;
+					}
+				}
+			}
+			.active{
+				a{
+					color: $rosa-escuro;
+				}
+			}
+		}
+	}
+	.contato{
+		color: #fff;
+		padding: 12px 30px;
+		background-color: $rosa-escuro;
+		border-radius: 6px;
+		transition: all .2s;
+		&:hover{
+			transition: all .2s;
+			text-decoration: none;
+			background-color: #e0c6b9;
+		}
+	}
+}
+footer{
+	margin: 100px 0 14px 0;
+	.conteudo{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 50px;
+		article{
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			background-color: $cinza;
+			border-radius: 16px 0px 0px 16px;
+			padding: 15px 130px 15px 80px;
+			.info{
+				width: 30%;
+				.crp{
+					margin: 5px 0 10px 0;
+				}
+			}
+			.sigame{
+				h4{
+					margin-bottom: 14px;
+				}
+				.instagram, .linkedin{
+					svg{
+						path{
+							transition: all .2s;
+						}
+					}
+					&:hover{
+						transition: all .2s;
+						text-decoration: none;
+						path{
+							fill: $rosa-escuro;
+						}
+					}
+					&:nth-child(3){
+						margin: 0 14px;
+					}
+				}
+				.facebook{
+					svg{
+						path{
+							transition: all .2s;
+						}
+					}
+					&:hover{
+						text-decoration: none;
+						transition: all .2s;
+						path{
+							stroke: $rosa-escuro;
+						}
+					}
+				}
+			}
+		}
+	}
+	.copyright{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
