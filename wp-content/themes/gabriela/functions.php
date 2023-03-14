@@ -222,6 +222,8 @@ function odin_enqueue_scripts() {
 	// Loads Odin main stylesheet.
 	wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
 
+	wp_enqueue_style( 'swiper', $template_url . '/assets/css/swiper.min.css', array(), null, 'all' );
+
 	// jQuery.
 	wp_enqueue_script( 'jquery' );
 
@@ -243,6 +245,8 @@ function odin_enqueue_scripts() {
 		// Grunt main file with Bootstrap, FitVids and others libs.
 		wp_enqueue_script( 'odin-main-min', $template_url . '/assets/js/main.min.js', array(), null, true );
 	}
+
+	wp_enqueue_script( 'swiper', $template_url . '/assets/js/swiper.jquery.min.js', array('jquery'), null, true );
 
 	wp_enqueue_script( 'main-js', $template_url . '/assets/js/custom.js', array('jquery'), null, true );
 

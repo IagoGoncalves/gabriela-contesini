@@ -4,7 +4,6 @@ jQuery(document).ready(function ($) {
 	let url = window.location.pathname;
 	let parts = url.split('/');
 	let lastPart = parts.pop() || parts.pop();
-	console.log(lastPart);
 	if (lastPart == 'gabriela-contesini') {
 		$('.li-home').addClass( "active" );
 		$('.li-sobre').removeClass( "active" );

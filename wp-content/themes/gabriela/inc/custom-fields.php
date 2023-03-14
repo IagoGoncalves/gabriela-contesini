@@ -67,6 +67,31 @@ function custom_metabox() {
          ),
       )
    );
+//Dados
+   $post_metabox = new Odin_Metabox(
+      'conteudo-banner', // Slug/ID of the Metabox (Required)
+      'Informações banner', // Metabox name (Required)
+      'banner', // Slug of Post Type (Optional)
+      'normal', // Context (options: normal, advanced, or side) (Optional)
+      'high' // Priority (options: high, core, default or low) (Optional)
+   );
+   $post_metabox->set_fields(
+      array(   
+         array(
+            'id'          => 'nome-btn', // Obrigatório
+            'label'       => __( 'Nome do botão:', 'odin' ), // Obrigatório
+            'type'        => 'text', // Obrigatório
+         ),
+         array(
+            'id'          => 'url-btn', // Required
+            'label'       => __( 'Direcionamento do botão:', 'odin' ), // Required
+            'type'        => 'input', // Required
+            'attributes'  => array( // Optional (html input elements)
+               'type' => 'url'
+            )
+      ),
+      )
+   );
 //Empresa
    $post_metabox = new Odin_Metabox(
       'principios', // Slug/ID of the Metabox (Required)
