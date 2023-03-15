@@ -23,8 +23,8 @@ function custom_metabox() {
             )
          ),
          array(
-            'id'          => 'telefone1', // Obrigatório
-            'label'       => __( 'Telefone :', 'odin' ), // Obrigatório
+            'id'          => 'whatsapp', // Obrigatório
+            'label'       => __( 'Whatsapp:', 'odin' ), // Obrigatório
             'type'        => 'text', // Obrigatório
             'description' => __( 'Digite o numero com DDD ex.:(xx) xxxx-xxxx', 'odin' ),
             'attributes'  => array( // Optional (html input elements)
@@ -67,7 +67,7 @@ function custom_metabox() {
          ),
       )
    );
-//Dados
+//Banner
    $post_metabox = new Odin_Metabox(
       'conteudo-banner', // Slug/ID of the Metabox (Required)
       'Informações banner', // Metabox name (Required)
@@ -89,38 +89,83 @@ function custom_metabox() {
             'attributes'  => array( // Optional (html input elements)
                'type' => 'url'
             )
-      ),
+         ),
       )
    );
-//Empresa
+//Index
    $post_metabox = new Odin_Metabox(
-      'principios', // Slug/ID of the Metabox (Required)
-      'Principios da empresa', // Metabox name (Required)
+      'pagina-inicial', // Slug/ID of the Metabox (Required)
+      'Informações da página inicial', // Metabox name (Required)
       'page', // Slug of Post Type (Optional)
       'normal', // Context (options: normal, advanced, or side) (Optional)
       'high', // Priority (options: high, core, default or low) (Optional)
-      'page-empresa.php'
     );
     $post_metabox->set_fields(
       array(        
          array(
-            'id'          => 'missao', // Obrigatório
-            'label'       => __( 'Missão:', 'odin' ), // Obrigatório
-            'type'        => 'text', // Obrigatório
+            'id'          => 'galeria-sobre', // Obrigatório
+            'label'       => __( 'Galeria da seção sobre', 'odin' ), // Obrigatório
+            'type'        => 'image_plupload', // Obrigatório
+         )
+      )
+   );
+//Servicos
+   $post_metabox = new Odin_Metabox(
+      'servico-field', // Slug/ID of the Metabox (Required)
+      'Serviço', // Metabox name (Required)
+      'servico', // Slug of Post Type (Optional)
+      'normal', // Context (options: normal, advanced, or side) (Optional)
+      'high' // Priority (options: high, core, default or low) (Optional)
+   );
+   $post_metabox->set_fields(
+      array(
+         array(
+            'id'          => 'subtitulo', // Required
+            'label'       => __( 'Subtítulo:', 'odin' ), // Required
+            'type'        => 'text', // Required
          ),
          array(
-            'id'          => 'visao', // Obrigatório
-            'label'       => __( 'Visão:', 'odin' ), // Obrigatório
-            'type'        => 'text', // Obrigatório
+            'id'          => 'topico1', // Required
+            'label'       => __( 'Texto tópico 1:', 'odin' ), // Required
+            'type'        => 'text', // Required
          ),
          array(
-            'id'          => 'valores', // Obrigatório
-            'label'       => __( 'Valores:', 'odin' ), // Obrigatório
-            'type'        => 'text', // Obrigatório
+            'id'          => 'topico2', // Required
+            'label'       => __( 'Texto tópico 2:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'topico3', // Required
+            'label'       => __( 'Texto tópico 3:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'topico4', // Required
+            'label'       => __( 'Texto tópico 4:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'topico5', // Required
+            'label'       => __( 'Texto tópico 5:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'topico6', // Required
+            'label'       => __( 'Texto tópico 6:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'topico7', // Required
+            'label'       => __( 'Texto tópico 7:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'topico8', // Required
+            'label'       => __( 'Texto tópico 8:', 'odin' ), // Required
+            'type'        => 'text', // Required
          ),
       )
    );
-
 }
 
 add_action( 'init', 'custom_metabox', 1 );

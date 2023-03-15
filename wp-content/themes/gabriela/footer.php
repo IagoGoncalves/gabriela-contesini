@@ -17,7 +17,7 @@
 			$instagram =  get_post_meta( $post->ID,'instagram', true );
 			$linkedin =  get_post_meta( $post->ID,'linkedin', true );
 			$telefone =  get_post_meta( $post->ID,'telefone', true );
-			$telefone1 =  get_post_meta( $post->ID,'telefone1', true );
+			$whatsapp =  get_post_meta( $post->ID,'whatsapp', true );
 			$email =  get_post_meta( $post->ID,'email', true );?>
 			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" alt="Gabriela Contesini" title="Gabriela Contesini"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-footer.svg"/></a>
 			<article class="desktop">
@@ -26,8 +26,8 @@
 					<a href="tel:<?php echo $telefone ?>" alt="<?php echo $telefone ?>" title="<?php echo $telefone ?>" target="_blank">    
 						<p><?php echo $telefone?></p>
 					</a>
-					<a href="tel:<?php echo $telefone1 ?>" alt="<?php echo $telefone ?>" title="<?php echo $telefone1 ?>" target="_blank">    
-						<p><?php echo $telefone1?></p>
+					<a class="whatsapp" href="https://api.whatsapp.com/send?phone=55<?php echo $whatsapp ?>&text=Olá, vim pelo site Gabriela Contesini" alt="<?php echo $whatsapp ?>" title="<?php echo $whatsapp ?>" target="_blank">
+						<p><?php echo $whatsapp?></p>
 					</a>
 					<a href="mailto:<?php echo $email ?>" target="_blank">
 						<p><?php echo $email?></p>

@@ -28,4 +28,19 @@ jQuery(document).ready(function ($) {
 		$('.li-cafe').removeClass( "active" );
 		$('.li-contato').addClass( "active" );
 	}
+//Swiper banner
+	var swiper = new Swiper('.swiper-banner', {
+		speed: 1500,
+		parallax: true,
+		loop: true,
+		spaceBetween: 30,
+		effect: 'fade',
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		autoplay: {
+			delay: 3000,
+		},    
+	});
 });

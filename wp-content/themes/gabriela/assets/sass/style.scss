@@ -41,6 +41,7 @@ h2 {
 h3 {
 	color: $preto;
 	font-size: 48px;
+	font-weight: 700;
 }
 h4 {
 	color: $preto;
@@ -55,6 +56,24 @@ h5 {
 p {
 	color: $cinza-escuro;
 	font-size: 20px;
+}
+.botao{
+	width: fit-content;
+	display: block;
+	padding: 12px 48px;
+	background-color: $rosa-escuro;
+	transition: all .2s;
+	border-radius: 6px;
+	p{
+		font-weight: 600;
+		color: #fff;
+		font-size: 20px;
+	}
+	&:hover{
+		background-color: #E0C6B9;
+		transition: all .2s;
+		text-decoration: none;
+	}
 }
 .align {
 	display: flex;
@@ -137,15 +156,12 @@ header {
 				position: fixed;
 				top: 1.5rem;
 				right: 1.5rem;
-				// height: 5rem;
-				// width: 5rem;
 				height: 3rem;
 				width: 3rem;
 				text-align: center;
 				background-color: $rosa;
 				border-radius: 50%;
 				z-index: 300;
-				// box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
 				cursor: pointer;
 				.navigation__icon {
 					position: relative;
@@ -155,7 +171,6 @@ header {
 				.navigation__icon::before,
 				.navigation__icon::after {
 					display: inline-block;
-					// width: 2.2rem;
 					width: 1.7rem;
 					height: 2px;
 					background-color: #fff;
@@ -176,8 +191,6 @@ header {
 			}
 			.navigation__background {
 				position: fixed;
-				// top: 2rem;
-				// right: 2rem;
 				top: 1.5rem;
 				right: 1.5rem;
 				height: 3rem;
@@ -501,10 +514,130 @@ footer {
 				.swiper-slide{
 					.box-descritivo{
 						position: absolute;
-						top: 50%;
-						transform: translateY(-50%);
+						top: 35%;
+						width: 40%;
+						margin-left: 140px;
+						z-index: 1;
+						h2{
+							font-family: "Raleway", sans-serif;
+							font-weight: 700;
+						}
+						h5{
+							font-family: "Raleway", sans-serif;
+							margin: 40px 0 50px 0;
+						}
 					}
 				}
+			}
+			.swiper-pagination{
+				padding: 10px 0;
+				position: relative;
+				bottom: 0;
+				.swiper-pagination-bullet{
+					background-color: #e14d00;;
+					width: 10px;
+					height: 10px;
+				}
+				.swiper-pagination-bullet-active{
+					background-color: $rosa-escuro;
+				}
+			}
+		}
+	}
+	.sobre{
+		margin: 150px 180px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.imagem{
+			width: 40%;
+			img{
+				border-radius: 12px;
+			}
+			.swiper-pagination{
+				padding: 10px 0;
+				position: relative;
+				bottom: 0;
+				.swiper-pagination-bullet{
+					background-color: #e14d00;;
+					width: 10px;
+					height: 10px;
+				}
+				.swiper-pagination-bullet-active{
+					background-color: $rosa-escuro;
+				}
+			}
+		}
+		aside{
+			width: 50%;
+			h5{
+				margin: 5px 0 35px 0;
+			}
+			div{
+				margin: 50px 0 40px 0;
+				.whatsapp{
+					margin-left: 15px;
+				}
+				svg {
+					path {
+						transition: all 0.2s;
+					}
+				}
+				a{
+					&:hover {
+						text-decoration: none;
+						transition: all 0.2s;
+						path {
+							fill: $rosa-escuro;
+						}
+					}
+				}
+			}
+		}
+	}
+	.servico{
+		.agrupador{
+			display: flex;
+			background: $cinza;
+			margin-left: 145px;
+			border-radius: 16px 0 0 16px;
+			.box-descritivo{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 100%;
+				padding: 40px 70px 40px 150px;
+				h3{
+					margin: 20px 0 25px 0;
+				}
+				.topicos{
+					margin: 20px 0 35px 0;
+					display: flex;
+					div{
+						p{
+							display: flex;
+    						align-items: center;
+							margin-bottom: 15px;
+							font-weight: 600;
+							color: $preto;
+							img{
+								margin-right: 10px;
+							}
+						}
+					}
+					.primeira-coluna{
+						margin-right: 80px;
+					}
+				}
+			}
+			.foto{
+				width: 100%;
+				position: relative;
+				top: -50px;
+			}
+			&:nth-child(2){
+				margin-top: 100px;
+				margin-bottom: 100px;
 			}
 		}
 	}
