@@ -166,6 +166,95 @@ function custom_metabox() {
          ),
       )
    );
+//Terapia online
+   $post_metabox = new Odin_Metabox(
+      'terapia-online-field', // Slug/ID of the Metabox (Required)
+      'Terapia Online', // Metabox name (Required)
+      'terapia-online', // Slug of Post Type (Optional)
+      'normal', // Context (options: normal, advanced, or side) (Optional)
+      'high' // Priority (options: high, core, default or low) (Optional)
+   );
+   $post_metabox->set_fields(
+      array(
+         array(
+            'id'          => 'image1', // Required
+            'label'       => __( 'Imagem 1:', 'odin' ), // Required
+            'type'        => 'image', // Required
+         ),
+         array(
+            'id'          => 'titulo1', // Required
+            'label'       => __( 'Título 1:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'subtitulo1', // Required
+            'label'       => __( 'Subtítulo 1:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'   => 'separator', // Obrigatório
+            'type' => 'separator' // Obrigatório
+         ),
+         array(
+            'id'          => 'image2', // Required
+            'label'       => __( 'Imagem 2:', 'odin' ), // Required
+            'type'        => 'image', // Required
+         ),
+         array(
+            'id'          => 'titulo2', // Required
+            'label'       => __( 'Título 2:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'subtitulo2', // Required
+            'label'       => __( 'Subtítulo 2:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'   => 'separator1', // Obrigatório
+            'type' => 'separator' // Obrigatório
+         ),
+         array(
+            'id'          => 'image3', // Required
+            'label'       => __( 'Imagem 3:', 'odin' ), // Required
+            'type'        => 'image', // Required
+         ),
+         array(
+            'id'          => 'titulo3', // Required
+            'label'       => __( 'Título 3:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'subtitulo3', // Required
+            'label'       => __( 'Subtítulo 3:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'   => 'separator1', // Obrigatório
+            'type' => 'separator' // Obrigatório
+         ),
+         array(
+            'id'          => 'beneficio1', // Required
+            'label'       => __( 'Beneficio tópico 1:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'beneficio2', // Required
+            'label'       => __( 'Beneficio tópico 2:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'beneficio3', // Required
+            'label'       => __( 'Beneficio tópico 3:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+         array(
+            'id'          => 'beneficio4', // Required
+            'label'       => __( 'Beneficio tópico 4:', 'odin' ), // Required
+            'type'        => 'text', // Required
+         ),
+      )
+   );
 }
 
 add_action( 'init', 'custom_metabox', 1 );

@@ -104,30 +104,30 @@ get_header(); ?>
 									<article class="topicos">
 										<div class="primeira-coluna">
 											<?php if ($topico1 != "") {?>	 
-												<p><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico1 ?></p>
+												<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico1 ?></p>
 											<?php }	
 											if ($topico2 != "") {?>	 
-												<p><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico2 ?></p>
+												<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico2 ?></p>
 											<?php }
 											if ($topico3 != "") {?>	 
-												<p><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico3 ?></p>
+												<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico3 ?></p>
 											<?php }	
 											if ($topico4 != "") {?>	 
-												<p><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico4 ?></p>
+												<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico4 ?></p>
 											<?php }?>	
 										</div>
 										<div class="segunda-coluna">
 											<?php if ($topico5 != "") {?>	 
-												<p><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico5 ?></p>
+												<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico5 ?></p>
 											<?php }	
 											if ($topico6 != "") {?>	 
-												<p><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico6 ?></p>
+												<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico6 ?></p>
 											<?php }
 											if ($topico7 != "") {?>	 
-												<p><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico7 ?></p>
+												<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico7 ?></p>
 											<?php }	
 											if ($topico8 != "") {?>	 
-												<p><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico8 ?></p>
+												<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $topico8 ?></p>
 											<?php }?>
 										</div>
 									</article>
@@ -143,6 +143,90 @@ get_header(); ?>
 					endwhile;
 				endif;
 			wp_reset_postdata(); ?>
+		</section>
+		<section class="terapia-online">
+			<?php $var = new WP_Query(array('post_type' => 'terapia-online','posts_per_page')); $var->the_post(); 
+				$titulo1 = get_post_meta( $post->ID,'titulo1', true );
+				$subtitulo1 = get_post_meta( $post->ID,'subtitulo1', true );
+				$titulo2 = get_post_meta( $post->ID,'titulo2', true );
+				$subtitulo2 = get_post_meta( $post->ID,'subtitulo2', true );
+				$titulo3 = get_post_meta( $post->ID,'titulo3', true );
+				$subtitulo3 = get_post_meta( $post->ID,'subtitulo3', true );
+				$beneficio1 = get_post_meta( $post->ID,'beneficio1', true );
+				$beneficio2 = get_post_meta( $post->ID,'beneficio2', true );
+				$beneficio3 = get_post_meta( $post->ID,'beneficio3', true );
+				$beneficio4 = get_post_meta( $post->ID,'beneficio4', true );
+				?>
+				<div class="agrupador align">
+					<div class="topicos">
+						<div class="box box1">
+							<?php $foto = get_post_meta( $post->ID,'image1', true );?>				
+							<img src="<?php echo odin_get_image_url( $foto, 120, 120, false, true);?>" >
+							<span>
+								<h5><?php echo $titulo1?></h5>
+								<h6><?php echo $subtitulo1?></h6>
+							</span>
+						</div>
+						<div class="box box2">
+							<?php $foto = get_post_meta( $post->ID,'image2', true );?>				
+							<img src="<?php echo odin_get_image_url( $foto, 120, 120, false, true);?>" >
+							<span>
+								<h5><?php echo $titulo2?></h5>
+								<h6><?php echo $subtitulo2?></h6>
+							</span>
+						</div>
+						<div class="box box3">
+							<?php $foto = get_post_meta( $post->ID,'image3', true );?>				
+							<img src="<?php echo odin_get_image_url( $foto, 120, 120, false, true);?>" >
+							<span>
+								<h5><?php echo $titulo3?></h5>
+								<h6><?php echo $subtitulo3?></h6>
+							</span>
+						</div>
+					</div>
+					<div class="box-descritivo">
+						<h2><?php the_title()?></h2>
+						<?php the_content()?>
+						<div class="beneficios">
+							<?php if ($beneficio1 != "") {?>	 
+								<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $beneficio1 ?></p>
+							<?php }	
+							if ($beneficio2 != "") {?>	 
+								<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $beneficio2 ?></p>
+							<?php }
+							if ($beneficio3 != "") {?>	 
+								<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $beneficio3 ?></p>
+							<?php }	
+							if ($beneficio4 != "") {?>	 
+								<p class="topico-lista"><img src='<?php echo get_template_directory_uri(); ?>/assets/images/verificado.svg'/> <?php echo $beneficio4 ?></p>
+							<?php }?>	
+						</div>
+					</div>
+				</div>
+			<?php wp_reset_postdata(); ?>
+		</section>
+		<section class="cafe">
+			<h2 class="align">Café com a Psi</h2>
+			<article>
+				<?php $args = array('post_type' => 'servico','posts_per_page' => 3);
+					$var = new WP_Query($args);
+					if($var->have_posts()):
+						while($var->have_posts()):
+							$var->the_post();?>			
+								<a class="box">
+									<div class='foto'><?php echo odin_thumbnail(510, 362, get_the_title(), true, false);?></div>
+									<div class="agrupador">
+										<p class="data">Postado em <?php the_time('d\/m\/Y') ?></p>
+										<h5><?php the_title()?></h5>
+										<p><?php echo excerpt(18); ?></p>
+										<span href="#" class="botao" target="_blank"><p>Saiba mais</p></span>
+									</div>
+								</a>
+							<?php
+						endwhile;
+					endif;
+				wp_reset_postdata(); ?>
+			</article>
 		</section>
 	</main>
 <?php

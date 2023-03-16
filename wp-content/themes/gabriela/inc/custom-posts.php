@@ -54,6 +54,43 @@ function type_post_porsonalizados() {
          'show_in_rest' => true
       )
    );
+//Terapia online
+   $terapiaOnline = new Odin_Post_Type(
+      'Terapia Online',
+      'terapia-online'
+   );
+   $terapiaOnline->set_labels(
+      array( 'menu_name' => __( 'Terapia Online', 'odin' ))
+   );
+   $terapiaOnline->set_arguments(
+      array(
+         'public' => true,
+         'supports' => array('title', 'author','revisions', 'editor'),
+         'has_archive' => true,
+         'show_in_nav_menus'   => true,
+         'menu_icon' => 'dashicons-nametag',
+         'show_in_rest' => true
+      )
+   );
+//Café
+   $cafe = new Odin_Post_Type(
+      'Café',
+      'cafe'
+   );
+   $cafe->set_labels(
+      array( 'menu_name' => __( 'Café com a PSI', 'odin' ))
+   );
+   $cafe->set_arguments(
+      array(
+         'public' => true,
+         'supports' => array('title','thumbnail','author','revisions' , 'editor'),
+         'has_archive' => true,
+         'show_in_nav_menus'   => true,
+         'menu_icon' => 'dashicons-coffee',
+         'show_in_rest' => true,
+         'taxonomies' => array('post_tag')
+      )
+   );
 }
 
 
