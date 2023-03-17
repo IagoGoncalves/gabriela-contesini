@@ -37,6 +37,9 @@ h2 {
 	color: $preto;
 	font-size: 80px;
 	font-family: "Lora", serif;
+	@media only screen and (max-width: 1265px) {
+		font-size: 48px;
+	}
 }
 h3 {
 	color: $preto;
@@ -52,40 +55,52 @@ h5 {
 	color: $rosa-escuro;
 	font-size: 24px;
 	font-family: "Lora", serif;
+	@media only screen and (max-width: 1265px) {
+		font-size: 20px;
+	}
 }
-h6{
+h6 {
 	color: $cinza-escuro;
 	font-size: 16px;
 }
 p {
 	color: $cinza-escuro;
 	font-size: 20px;
+	@media only screen and (max-width: 1265px) {
+		font-size: 18px;
+	}
 }
-.botao{
+.botao {
 	width: fit-content;
 	display: block;
 	padding: 12px 48px;
 	background-color: $rosa-escuro;
-	transition: all .2s;
+	transition: all 0.2s;
 	border-radius: 6px;
-	p{
+	p {
 		font-weight: 600;
 		color: #fff;
 		font-size: 20px;
 	}
-	&:hover{
-		background-color: #E0C6B9;
-		transition: all .2s;
+	&:hover {
+		background-color: #e0c6b9;
+		transition: all 0.2s;
 		text-decoration: none;
 	}
+	@media only screen and (max-width: 1265px) {
+		padding: 10px 30px;
+		p {
+			font-size: 18px;
+		}
+	}
 }
-.topico-lista{
+.topico-lista {
 	display: flex;
 	align-items: center;
 	margin-bottom: 15px;
 	font-weight: 600;
 	color: $preto;
-	img{
+	img {
 		margin-right: 10px;
 	}
 }
@@ -521,75 +536,92 @@ footer {
 		}
 	}
 }
-.home{
-	.banner{
-		.swiper-container{
-			.swiper-wrapper{
-				.swiper-slide{
-					.box-descritivo{
+.home {
+	.banner {
+		.swiper-container {
+			.swiper-wrapper {
+				.swiper-slide {
+					.box-descritivo {
 						position: absolute;
-						top: 35%;
+						top: 50%;
+						transform: translateY(-50%);
 						width: 40%;
 						margin-left: 140px;
 						z-index: 1;
-						h2{
+						h2 {
 							font-family: "Raleway", sans-serif;
 							font-weight: 700;
 						}
-						h5{
+						h5 {
 							font-family: "Raleway", sans-serif;
 							margin: 40px 0 50px 0;
 						}
 					}
+					@media only screen and (max-width: 1265px) {
+						.box-descritivo {
+							margin-left: 50px;
+							h2 {
+								font-size: 48px;
+							}
+							h5 {
+								margin: 10px 0 35px 0;
+							}
+						}
+					}
+					@media only screen and (max-width: 1000px) {
+						.box-descritivo {
+							width: 50%;
+						}
+					}
 				}
 			}
-			.swiper-pagination{
+			.swiper-pagination {
 				padding: 10px 0;
 				position: relative;
 				bottom: 0;
-				.swiper-pagination-bullet{
-					background-color: #e14d00;;
+				.swiper-pagination-bullet {
+					background-color: #e14d00;
 					width: 10px;
 					height: 10px;
 				}
-				.swiper-pagination-bullet-active{
+				.swiper-pagination-bullet-active {
 					background-color: $rosa-escuro;
 				}
 			}
 		}
 	}
-	.sobre{
-		margin: 150px 180px;
+	.sobre-desktop {
+		margin: 8% 10%;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		.imagem{
+		.imagem {
 			width: 40%;
-			img{
+			img {
 				border-radius: 12px;
 			}
-			.swiper-pagination{
+			.swiper-pagination {
 				padding: 10px 0;
 				position: relative;
 				bottom: 0;
-				.swiper-pagination-bullet{
-					background-color: #e14d00;;
+				.swiper-pagination-bullet {
+					background-color: #e14d00;
 					width: 10px;
 					height: 10px;
 				}
-				.swiper-pagination-bullet-active{
+				.swiper-pagination-bullet-active {
 					background-color: $rosa-escuro;
 				}
 			}
 		}
-		aside{
+		aside {
 			width: 50%;
-			h5{
+			h5 {
 				margin: 5px 0 35px 0;
 			}
-			div{
+			div {
 				margin: 50px 0 40px 0;
-				.whatsapp{
+				.whatsapp {
 					margin-left: 15px;
 				}
 				svg {
@@ -597,7 +629,7 @@ footer {
 						transition: all 0.2s;
 					}
 				}
-				a{
+				a {
 					&:hover {
 						text-decoration: none;
 						transition: all 0.2s;
@@ -608,90 +640,168 @@ footer {
 				}
 			}
 		}
+		@media only screen and (max-width: 1265px) {
+			margin: 8% 4%;
+			align-items: flex-start;
+			aside {
+				h2 {
+					margin-top: 20px;
+				}
+				h5 {
+					margin: 10px 0 20px 0;
+				}
+				div {
+					margin: 35px 0 25px 0;
+				}
+			}
+		}
 	}
-	.servico{
-		.agrupador{
+	.sobre-mobile {
+		display: none;
+	}
+	@media only screen and (max-width: 990px) {
+		.sobre-desktop {
+			display: none;
+		}
+		.sobre-mobile {
+			margin: 8% 10%;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			h5 {
+				margin: 12px 0 25px 0;
+			}
+			.imagem {
+				img {
+					border-radius: 12px;
+				}
+				.swiper-pagination {
+					padding: 5px 0 10px 0;
+					position: relative;
+					bottom: 0;
+					.swiper-pagination-bullet {
+						background-color: #e14d00;
+						width: 10px;
+						height: 10px;
+					}
+					.swiper-pagination-bullet-active {
+						background-color: $rosa-escuro;
+					}
+				}
+			}
+			aside {
+				p {
+					text-align: justify;
+				}
+				div{
+					margin: 15px 0;
+					.whatsapp{
+						margin-left: 20px;
+					}
+				}
+				a {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	.servico {
+		.agrupador {
 			display: flex;
 			background: $cinza;
-			margin-left: 145px;
+			margin-left: 7.5%;
 			border-radius: 16px 0 0 16px;
-			.box-descritivo{
+			.box-descritivo {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				width: 100%;
 				padding: 40px 70px 40px 150px;
-				h3{
+				h3 {
 					margin: 20px 0 25px 0;
 				}
-				.topicos{
+				.topicos {
 					margin: 20px 0 35px 0;
 					display: flex;
-					.primeira-coluna{
+					.primeira-coluna {
 						margin-right: 80px;
 					}
 				}
 			}
-			.foto{
+			.foto {
 				width: 100%;
 				position: relative;
 				top: -50px;
 			}
-			&:nth-child(2){
+			&:nth-child(2) {
 				margin-top: 140px;
 				margin-bottom: 140px;
 				flex-direction: row-reverse;
 				margin-left: 0;
-				margin-right: 145px;
+				margin-right: 62px;
 				padding-left: 145px;
 				border-radius: 0 16px 16px 0;
-				.box-descritivo{
+				.box-descritivo {
 					padding: 40px 150px 40px 70px;
 				}
-				.foto{
-					display: flex;
-    				justify-content: flex-end;
+			}
+			@media only screen and (max-width: 1780px) {
+				&:nth-child(2) {
+					padding-left: 0px;
+					margin-right: 7.5%;
+				}
+			}
+			@media only screen and (max-width: 1500px) {
+				margin-left: 4%;
+				.box-descritivo{
+					padding: 40px 70px;
+				}
+				&:nth-child(2) {
+					margin-right: 4%;
+					.box-descritivo{
+						padding: 40px 70px;
+					}
 				}
 			}
 		}
 	}
-	.terapia-online{
+	.terapia-online {
 		background-color: $rosa;
 		margin: 100px 0;
-		.agrupador{
+		.agrupador {
 			padding: 120px 0;
-			.topicos{
+			.topicos {
 				margin-right: 80px;
 				width: 30%;
-				.box{
+				.box {
 					display: flex;
 					align-items: center;
 					background-color: #fff;
 					border-radius: 16px 16px 16px 55px;
 					padding: 20px 40px;
-					span{
+					span {
 						margin-left: 40px;
-						h5{
+						h5 {
 							color: $preto;
 							font-weight: 600;
 							margin-bottom: 15px;
 						}
 					}
 				}
-				.box2{
+				.box2 {
 					margin: 50px 0;
 					position: relative;
-    				left: -75px;
+					left: -75px;
 				}
 			}
-			.box-descritivo{
+			.box-descritivo {
 				width: 35%;
-				h2{
+				h2 {
 					margin-bottom: 40px;
-				}	
-				.beneficios{
+				}
+				.beneficios {
 					margin-top: 60px;
-					p{
+					p {
 						color: $preto;
 						display: flex;
 						align-items: center;
@@ -702,8 +812,8 @@ footer {
 			}
 		}
 	}
-	.cafe{
-		h2{
+	.cafe {
+		h2 {
 			margin-bottom: 80px;
 			&:before {
 				content: "";
@@ -724,44 +834,44 @@ footer {
 				margin-left: 20px;
 			}
 		}
-		article{
+		article {
 			display: flex;
-   			align-items: flex-start;
+			align-items: flex-start;
 			justify-content: space-between;
 			margin: 0 140px;
-			.box{
+			.box {
 				width: 30%;
-				border: 1px solid #D9D9D9;
+				border: 1px solid #d9d9d9;
 				border-radius: 16px;
 				overflow: hidden;
-				.foto{
+				.foto {
 					overflow: hidden;
-					img{
-						transition: all .3s;
+					img {
+						transition: all 0.3s;
 					}
 				}
-				&:hover{
+				&:hover {
 					text-decoration: none;
-					.foto{
+					.foto {
 						overflow: hidden;
-						img{
+						img {
 							scale: 1.1;
-							transition: all .3s;
+							transition: all 0.3s;
 						}
 					}
 				}
-				.agrupador{
+				.agrupador {
 					padding: 15px 30px 40px 30px;
-					.data{
+					.data {
 						font-size: 16px;
-						color: #A9A9A9;
+						color: #a9a9a9;
 					}
-					h5{
+					h5 {
 						color: $preto;
 						font-weight: 600;
 						margin: 15px 0;
 					}
-					span{
+					span {
 						cursor: pointer;
 						margin-top: 20px;
 					}
