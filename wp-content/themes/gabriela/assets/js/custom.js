@@ -41,6 +41,6 @@ jQuery(document).ready(function ($) {
 		},
 		autoplay: {
 			delay: 3000,
-		},    
+		}, 
 	});
 });

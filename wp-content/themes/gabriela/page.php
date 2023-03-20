@@ -78,7 +78,7 @@ get_header(); ?>
 						</svg>
 					</a>
 				</div>
-				<a href="" class="botao"><p>Saiba Mais</p></a>
+				<a href="<?php echo esc_url( home_url( '/sobre' ) ); ?>" class="botao"><p>Saiba Mais</p></a>
 			</aside>
 		</section>
 		<section class="sobre-mobile">
@@ -113,7 +113,7 @@ get_header(); ?>
 						</svg>
 					</a>
 				</div>
-				<a href="" class="botao"><p>Saiba Mais</p></a>
+				<a href="<?php echo esc_url( home_url( '/sobre' ) ); ?>" class="botao"><p>Saiba Mais</p></a>
 			</aside>
 		</section>
 		<section class="servico">

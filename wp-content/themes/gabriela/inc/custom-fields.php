@@ -86,6 +86,7 @@ function custom_metabox() {
             'id'          => 'url-btn', // Required
             'label'       => __( 'Direcionamento do botão:', 'odin' ), // Required
             'type'        => 'input', // Required
+            'description' => __( 'Exemplo: gabrielacontesini.com.br/sobre', 'odin' ), // Opcional
             'attributes'  => array( // Optional (html input elements)
                'type' => 'url'
             )
@@ -252,6 +253,34 @@ function custom_metabox() {
             'id'          => 'beneficio4', // Required
             'label'       => __( 'Beneficio tópico 4:', 'odin' ), // Required
             'type'        => 'text', // Required
+         ),
+      )
+   );
+// Sobre
+   $post_metabox = new Odin_Metabox(
+      'informativo', // Slug/ID of the Metabox (Required)
+      'Descritivos', // Metabox name (Required)
+      'page', // Slug of Post Type (Optional)
+      'normal', // Context (options: normal, advanced, or side) (Optional)
+      'high', // Priority (options: high, core, default or low) (Optional)
+      'page-sobre.php'
+   );
+   $post_metabox->set_fields(
+      array(        
+         array(
+            'id'          => 'bloco1', // Obrigatório
+            'label'       => __( 'Bloco de texto 1:', 'odin' ), // Obrigatório
+            'type'        => 'textarea', // Obrigatório
+         ),
+         array(
+            'id'          => 'bloco2', // Obrigatório
+            'label'       => __( 'Bloco de texto 2:', 'odin' ), // Obrigatório
+            'type'        => 'textarea', // Obrigatório
+         ),
+         array(
+            'id'          => 'bloco3', // Obrigatório
+            'label'       => __( 'Bloco de texto 3:', 'odin' ), // Obrigatório
+            'type'        => 'textarea', // Obrigatório
          ),
       )
    );
