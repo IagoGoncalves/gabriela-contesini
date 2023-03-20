@@ -64,6 +64,29 @@ get_header();
 			<p><?php echo get_post_meta( $post->ID,'bloco2', true )?></p>
 			<p><?php echo get_post_meta( $post->ID,'bloco3', true )?></p>
 		</section>
+		<section class="cafe">
+			<h2 class="align">Café com a Psi</h2>
+			<article>
+				<?php $args = array('post_type' => 'servico','posts_per_page' => 3);
+					$var = new WP_Query($args);
+					if($var->have_posts()):
+						while($var->have_posts()):
+							$var->the_post();?>			
+								<a class="box">
+									<div class='foto'><?php echo odin_thumbnail(510, 362, get_the_title(), true, false);?></div>
+									<div class="agrupador">
+										<p class="data">Postado em <?php the_time('d\/m\/Y') ?></p>
+										<h5><?php the_title()?></h5>
+										<p><?php echo excerpt(18); ?></p>
+										<span href="#" class="botao" target="_blank"><p>Saiba mais</p></span>
+									</div>
+								</a>
+							<?php
+						endwhile;
+					endif;
+				wp_reset_postdata(); ?>
+			</article>
+		</section>
 	</main>
 <?php
 get_footer();
