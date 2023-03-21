@@ -74,7 +74,7 @@ function type_post_porsonalizados() {
    );
 //Café
    $blog = new Odin_Post_Type(
-      'Café',
+      'Blog',
       'blog'
    );
    $blog->set_labels(
