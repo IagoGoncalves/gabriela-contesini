@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {
 		$('.li-cafe').removeClass( "active" );
 		$('.li-contato').removeClass( "active" );
 	}
-	if (lastPart == 'cafe'){
+	if (lastPart == 'blog'){
 		$('.li-home').removeClass( "active" );
 		$('.li-sobre').removeClass( "active" );
 		$('.li-cafe').addClass( "active" );

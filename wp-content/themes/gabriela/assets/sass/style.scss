@@ -164,6 +164,10 @@ header {
 						color: $rosa-escuro;
 						text-decoration: none;
 					}
+					&:focus, &:focus-visible{
+						outline: 0;	
+						text-decoration: none;
+					}
 				}
 				&:nth-child(1) {
 					&:before {
@@ -1108,5 +1112,10 @@ footer {
 	}
 	.cafe{
 		margin-top: 100px;
+	}
+}
+.blog{
+	h1{
+		
 	}
 }

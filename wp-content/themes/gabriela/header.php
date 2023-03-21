@@ -27,7 +27,7 @@
 			<ul class="menu">
 				<li class="li-home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
 				<li class="li-sobre"><a href="<?php echo esc_url( home_url( 'sobre' ) ); ?>">Sobre</a></li>
-				<li class="li-cafe"><a href="<?php echo esc_url( home_url( 'cafe' ) ); ?>">Café com a PSI</a></li>
+				<li class="li-cafe"><a href="<?php echo esc_url( home_url( 'blog' ) ); ?>">Café com a PSI</a></li>
 				<li class="li-contato"><a href="<?php echo esc_url( home_url( 'contato' ) ); ?>">Contato</a></li>
 			</ul>
 			<div class="navigation">
@@ -46,7 +46,7 @@
 							<a href="<?php echo esc_url( home_url( 'sobre' ) ); ?>" class="navigation__link">Sobre</a>
 						</li>
 						<li class="navigation__item">
-							<a href="<?php echo esc_url( home_url( 'cafe' ) ); ?>" class="navigation__link">Café com a PSI</a>
+							<a href="<?php echo esc_url( home_url( 'blog' ) ); ?>" class="navigation__link">Café com a PSI</a>
 						</li>
 						<li class="navigation__item">
 							<a href="<?php echo esc_url( home_url( 'contato' ) ); ?>" class="navigation__link">Contato</a>

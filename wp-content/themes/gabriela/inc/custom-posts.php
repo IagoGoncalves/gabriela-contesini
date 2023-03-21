@@ -73,14 +73,14 @@ function type_post_porsonalizados() {
       )
    );
 //Café
-   $cafe = new Odin_Post_Type(
+   $blog = new Odin_Post_Type(
       'Café',
-      'cafe'
+      'blog'
    );
-   $cafe->set_labels(
+   $blog->set_labels(
       array( 'menu_name' => __( 'Café com a PSI', 'odin' ))
    );
-   $cafe->set_arguments(
+   $blog->set_arguments(
       array(
          'public' => true,
          'supports' => array('title','thumbnail','author','revisions' , 'editor'),

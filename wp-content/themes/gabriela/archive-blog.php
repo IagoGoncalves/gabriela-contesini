@@ -18,7 +18,24 @@
 
 get_header(); ?>
 	<main id="blog" class="blog" tabindex="-1" role="main">
-
+		<h1>Blog</h1>
+		<section>
+			<?php $args = array('post_type' => 'cafe','posts_per_page' => -1);
+				$var = new WP_Query($args);
+				if($var->have_posts()):
+					while($var->have_posts()):
+						$var->the_post();?>	
+							<div class="card">		
+								<p class="data">Postado em <?php the_time('d\/m\/Y') ?></p>
+								<?php echo odin_thumbnail(460, 370, get_the_title(), true, false);?>
+								<h5><?php the_title()?></h5>
+								<a href="" class="botao"><p>Ler mais</p></a>
+							</div>
+						<?php
+					endwhile;
+				endif;
+			wp_reset_postdata(); ?>
+		</section>
 	</main>
 <?php
 get_footer();
