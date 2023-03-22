@@ -256,7 +256,7 @@ function custom_metabox() {
          ),
       )
    );
-// Sobre
+//Sobre
    $post_metabox = new Odin_Metabox(
       'informativo', // Slug/ID of the Metabox (Required)
       'Descritivos', // Metabox name (Required)
@@ -281,6 +281,23 @@ function custom_metabox() {
             'id'          => 'bloco3', // Obrigatório
             'label'       => __( 'Bloco de texto 3:', 'odin' ), // Obrigatório
             'type'        => 'textarea', // Obrigatório
+         ),
+      )
+   );
+//Café com a PSI
+   $post_metabox = new Odin_Metabox(
+      'blog-field', // Slug/ID of the Metabox (Required)
+      'field-blog', // Metabox name (Required)
+      'blog', // Slug of Post Type (Optional)
+      'normal', // Context (options: normal, advanced, or side) (Optional)
+      'high' // Priority (options: high, core, default or low) (Optional)
+   );
+   $post_metabox->set_fields(
+      array(
+         array(
+            'id'          => 'video', // Required
+            'label'       => __( 'Vídeo:', 'odin' ), // Required
+            'type'        => 'editor', // Required
          ),
       )
    );

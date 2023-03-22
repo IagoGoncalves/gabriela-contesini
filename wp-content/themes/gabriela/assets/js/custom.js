@@ -28,6 +28,11 @@ jQuery(document).ready(function ($) {
 		$('.li-cafe').removeClass( "active" );
 		$('.li-contato').addClass( "active" );
 	}
+//botão buscar 1
+	$('#botao').click(function(e) {
+		$(this).siblings().toggleClass( 'ativo' );
+		e.preventDefault();
+	});
 //Swiper banner
 	var swiper = new Swiper('.swiper-banner', {
 		speed: 1500,
@@ -43,4 +48,5 @@ jQuery(document).ready(function ($) {
 			delay: 3000,
 		}, 
 	});
+
 });
