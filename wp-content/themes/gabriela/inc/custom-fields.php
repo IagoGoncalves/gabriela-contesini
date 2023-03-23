@@ -295,9 +295,9 @@ function custom_metabox() {
    $post_metabox->set_fields(
       array(
          array(
-            'id'          => 'video', // Required
-            'label'       => __( 'Vídeo:', 'odin' ), // Required
-            'type'        => 'editor', // Required
+            'id'          => 'video', // Obrigatório
+            'label'       => __( 'Vídeo:', 'odin' ), // Obrigatório
+            'type'        => 'upload', // Obrigatório
          ),
       )
    );

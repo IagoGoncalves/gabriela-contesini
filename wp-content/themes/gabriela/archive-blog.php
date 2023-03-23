@@ -24,7 +24,6 @@ get_header(); ?>
 		</div>	
 		<section>
 			<?php $args = array('post_type' => 'blog', 'posts_per_page' => get_option('posts_per_page'), 'paged' => get_query_var('paged', 6));
-
 				$var = new WP_Query($args);
 				if($var->have_posts()):
 					while($var->have_posts()):
