@@ -28,7 +28,7 @@ get_header(); ?>
 				if($var->have_posts()):
 					while($var->have_posts()):
 						$var->the_post();?>	
-							<a href="<?php the_permalink()?>" class="card">		
+							<a href="<?php the_permalink()?>" class="card" rel="direciona para a página de conteúdo do item">		
 								<div class="foto"><?php echo odin_thumbnail(460, 370, get_the_title(), true, false);?></div>
 								<div class="box">
 									<p class="data">Postado em <?php the_time('d\/m\/Y') ?></p>
