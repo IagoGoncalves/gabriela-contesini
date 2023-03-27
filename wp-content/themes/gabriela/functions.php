@@ -381,3 +381,11 @@ $content = str_replace(']]>', ']]&gt;', $content);
 
 return $content;
 }
+
+function my_search_form_filter($form) {
+    $form = str_replace('</form>',
+        '<input type="hidden" name="taxonomy" value="post_tag" /></form>',
+        $form);
+    return $form;
+}
+add_filter('get_search_form', 'my_search_form_filter');
