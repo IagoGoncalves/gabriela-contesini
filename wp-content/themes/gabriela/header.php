@@ -19,6 +19,7 @@
 	<?php endif; ?>
 	<?php wp_head(); ?>
 	
+	<script src = 'https://www.google.com/recaptcha/api.js?'></script>
 </head>
 
 <body <?php body_class(); ?>>

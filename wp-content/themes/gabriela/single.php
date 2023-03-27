@@ -91,7 +91,7 @@ get_header(); ?>
 			<form method="get" class="navbar-form navbar-right" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
 				<h4>Procurar</h4>
 				<div class="form-group">
-					<input type="search" value="<?php echo get_search_query(); ?>" class="form-control" name="s" id="navbar-search" placeholder="Pesquisar no site"/>
+					<input type="search" value="<?php echo get_search_query(); ?>" class="form-control" name="s" id="navbar-search" autocomplete="off" placeholder="Pesquisar no site"/>
 				</div>
 				<button type="submit" class="btn btn-default">
 					<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">

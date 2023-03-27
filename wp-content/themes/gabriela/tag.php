@@ -11,7 +11,7 @@
  */
 
 get_header(); ?>
-	<main id="tag" class="blog" tabindex="-1" role="main">
+	<main id="search-tag" class="search-tag" tabindex="-1" role="main">
 		<h1>Tag: <?php single_tag_title(); ?></h1>
 		<?php
       		$current_tag = get_queried_object();
