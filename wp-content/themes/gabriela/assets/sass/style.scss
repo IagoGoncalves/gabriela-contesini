@@ -85,7 +85,7 @@ p {
 		font-size: 16px;
 	}
 }
-.desabilitado{
+.desabilitado {
 	display: none;
 }
 .botao {
@@ -507,6 +507,18 @@ footer {
 				text-align: center;
 				margin-bottom: 5px;
 			}
+		}
+	}
+	.botao-whatsapp {
+		position: fixed;
+		z-index: 99;
+		bottom: 80px;
+		right: 30px;
+		text-decoration: none;
+		transition: all 0.2s;
+		&:hover{
+			transition: all 0.2s;
+			transform: scale(1.1);
 		}
 	}
 	@media only screen and (max-width: 716px) {
@@ -1246,50 +1258,50 @@ footer {
 	margin: 0 8%;
 	display: flex;
 	justify-content: space-between;
-	article{
+	article {
 		margin-top: 80px;
 		width: 65%;
-		h1{
+		h1 {
 			font-size: 48px;
 			font-weight: 600;
 			font-family: "Lora", serif;
 		}
-		.social{
+		.social {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			overflow: hidden;
-			p{
-				svg{
+			p {
+				svg {
 					margin-right: 5px;
 				}
 			}
-			.compartilhe{
+			.compartilhe {
 				position: relative;
-				transition: all .3s;
+				transition: all 0.3s;
 				padding: 25px 0 10px 0;
 				cursor: pointer;
-				span{
-					transition: all .3s;
+				span {
+					transition: all 0.3s;
 					position: absolute;
 					transform: translateX(120%);
-					a{
+					a {
 						text-decoration: none;
-						svg{
-							path{
-								transition: all .2s;
+						svg {
+							path {
+								transition: all 0.2s;
 							}
 						}
-						&:hover{
-							svg{
-								path{
-									transition: all .2s;
-									fill: $rosa-escuro
+						&:hover {
+							svg {
+								path {
+									transition: all 0.2s;
+									fill: $rosa-escuro;
 								}
 							}
-							.face{
-								path{
-									transition: all .2s;
+							.face {
+								path {
+									transition: all 0.2s;
 									stroke: $rosa-escuro;
 									fill: transparent;
 								}
@@ -1297,39 +1309,39 @@ footer {
 						}
 					}
 				}
-				&:hover{
+				&:hover {
 					transform: translateX(-100%);
-					transition: all .3s;
+					transition: all 0.3s;
 					overflow: unset;
 				}
 			}
 		}
-		img{
+		img {
 			border-radius: 6px;
 			max-width: 100%;
 		}
-		.conteudo{
+		.conteudo {
 			margin: 30px 0 50px 0;
-			p{
+			p {
 				text-align: justify;
 			}
 		}
 	}
-	aside{
+	aside {
 		width: 25%;
 		margin-top: 80px;
 		display: flex;
 		flex-direction: column;
-		h4{
+		h4 {
 			margin-bottom: 40px;
 			font-weight: 700;
 		}
-		form{
+		form {
 			padding: 0;
-    		margin: 0;
-			.form-group{
+			margin: 0;
+			.form-group {
 				width: 75%;
-				input{
+				input {
 					height: 55px;
 					width: 100%;
 					font-size: 18px;
@@ -1337,75 +1349,75 @@ footer {
 					padding: 5px 10px;
 				}
 			}
-			button{
+			button {
 				background-color: $rosa-escuro;
 				border-radius: 6px;
 				height: 55px;
 				padding: 12px;
-				transition: all .2s;
-				&:hover{
-					transition: all .2s;
+				transition: all 0.2s;
+				&:hover {
+					transition: all 0.2s;
 					background-color: #d3a790;
 					border: 1px solid #d3a790;
 				}
 			}
 		}
-		.post-recentes{
+		.post-recentes {
 			border-top: 1px solid #eeeeee;
 			border-bottom: 1px solid #eeeeee;
 			padding: 50px 0;
 			margin: 50px 0;
-			div{
-				a{
+			div {
+				a {
 					text-decoration: none;
-					h5{
+					h5 {
 						color: $preto;
 						font-size: 20px;
 						font-weight: 500;
-						transition: all .2s;
+						transition: all 0.2s;
 					}
-					p{
+					p {
 						margin-top: 5px;
 						display: flex;
 						align-items: center;
 						font-size: 18px;
-						transition: all .2s;
+						transition: all 0.2s;
 					}
-					&:hover{
-						h5{
+					&:hover {
+						h5 {
 							color: $rosa-escuro;
-							transition: all .2s;
+							transition: all 0.2s;
 						}
-						p{
+						p {
 							color: $preto;
-							transition: all .2s;
+							transition: all 0.2s;
 						}
 					}
 				}
-				&:nth-child(3){
+				&:nth-child(3) {
 					margin: 30px 0;
 				}
 			}
 		}
-		.tags{
-			div{
+		.tags {
+			div {
 				display: flex;
 				flex-wrap: wrap;
-				a{
+				a {
 					margin: 5px 5px 5px 0;
 					text-decoration: none;
-					color: #A9A9A9;
-					border: 1px solid #A9A9A9;
+					color: #a9a9a9;
+					border: 1px solid #a9a9a9;
 					padding: 5px 15px;
 					border-radius: 6px;
-					transition: all .2s;
-					&:hover{
-						transition: all .2s;
+					transition: all 0.2s;
+					&:hover {
+						transition: all 0.2s;
 						color: $rosa-escuro;
 						border: 1px solid $rosa-escuro;
 					}
 				}
-			}	
+			}
 		}
 	}
 }
