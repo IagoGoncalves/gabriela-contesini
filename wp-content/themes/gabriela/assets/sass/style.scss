@@ -85,9 +85,6 @@ p {
 		font-size: 16px;
 	}
 }
-.desabilitado {
-	display: none;
-}
 .botao {
 	width: fit-content;
 	display: block;
@@ -111,6 +108,14 @@ p {
 			font-size: 18px;
 		}
 	}
+}
+.align {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.desabilitado {
+	display: none;
 }
 .topico-lista {
 	display: flex;
@@ -136,11 +141,6 @@ p {
 		font-size: 40px;
 		color: $preto;
 	}
-}
-.align {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 main {
 	padding-top: 99px;
@@ -1417,6 +1417,48 @@ footer {
 						border: 1px solid $rosa-escuro;
 					}
 				}
+			}
+		}
+		@media only screen and (max-width: 1200px) {
+			width: 28%;
+		}
+	}
+	@media only screen and (max-width: 990px) {
+		flex-direction: column;
+		article{
+			width: 100%;
+			.data{
+				padding-top: 25px;
+			}
+			.desktop{
+				display: none;
+			}
+			.desabilitado{
+				display: flex;
+				align-items: center;
+				span{
+					margin-top: 5px;
+					a{
+						margin-left: 10px;
+					}
+				}
+			}	
+		}
+		aside{
+			width: 100%;
+			flex-direction: column-reverse;
+			.navbar-form{
+				display: none;
+			}
+			.tags{
+				div{
+					justify-content: space-evenly;
+				}
+			}
+			.post-recentes{
+				border-bottom: 0;
+				padding: 30px 0 0 0;
+    			margin: 30px 0 0 0;
 			}
 		}
 	}
