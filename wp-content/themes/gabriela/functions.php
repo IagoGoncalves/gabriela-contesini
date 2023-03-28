@@ -246,6 +246,9 @@ function odin_enqueue_scripts() {
 		wp_enqueue_script( 'odin-main-min', $template_url . '/assets/js/main.min.js', array(), null, true );
 	}
 
+	wp_enqueue_script( 'enviar-email', $template_url . '/assets/js/enviar-email.js', array('jquery'), null, true );
+	wp_localize_script( 'enviar-email', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+
 	wp_enqueue_script( 'swiper', $template_url . '/assets/js/swiper.jquery.min.js', array('jquery'), null, true );
 
 	wp_enqueue_script( 'main-js', $template_url . '/assets/js/custom.js', array('jquery'), null, true );
@@ -349,6 +352,14 @@ require_once get_template_directory() . '/inc/custom-posts.php';
 //Metabox
 require_once get_template_directory() . '/inc/custom-fields.php';
 //-------------------------
+
+//Ajax
+require_once('class.phpmailer.php');
+require_once get_template_directory() . '/inc/ajax.php';
+
+//MetaBox
+$post_id = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'] ;
+$template_file = get_post_meta($post_id,'_wp_page_template',TRUE);
 
 function excerpt($limit) {
 $excerpt = explode(' ', get_the_excerpt(), $limit);

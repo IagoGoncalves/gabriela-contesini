@@ -28,6 +28,7 @@ get_header();
 			</div>
 			<form class="contact2-form" id="contato" name="enviar-email" method="post">
 				<input class="tipo-email" type="hidden" name="tipo-email" value="contato">
+
 				<div class="campos">
 					<input class="input2" type="text" name="name" required>
 					<span class="focus-input2" data-placeholder="Nome Completo"></span>

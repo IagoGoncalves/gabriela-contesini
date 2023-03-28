@@ -108,6 +108,12 @@ p {
 			font-size: 18px;
 		}
 	}
+	@media only screen and (max-width: 600px) {
+		padding: 10px 30px;
+		p {
+			font-size: 18px;
+		}
+	}
 }
 .align {
 	display: flex;
@@ -155,6 +161,10 @@ p {
 		}
 	}
 }
+.load {
+	display: none;
+	margin-top: 20px;
+}
 main {
 	padding-top: 99px;
 }
@@ -167,7 +177,7 @@ main {
 	background-color: #fff;
 	width: 100%;
 	box-shadow: 0px -7px 9px #000;
-	z-index: 9;
+	z-index: 180;
 	.agrupador {
 		padding: 12px 0;
 		ul {
@@ -297,7 +307,7 @@ main {
 					flex-direction: column;
 					align-items: center;
 					position: absolute;
-					top: 50%;
+					top: 45%;
 					left: 50%;
 					transform: translate(-50%, -50%);
 					text-align: center;
@@ -314,7 +324,7 @@ main {
 							padding: 1rem 2rem;
 							text-transform: uppercase;
 							color: $rosa-escuro;
-							font-size: 2.4rem;
+							font-size: 2.2rem;
 							text-decoration: none;
 							transition: all 0.2s;
 							margin: 0;
@@ -325,6 +335,12 @@ main {
 						.navigation__link:hover {
 							color: #d3a790;
 							transform: scale(1.1);
+						}
+						&:nth-child(1) {
+							&:before {
+								width: 6px;
+								height: 6px;
+							}
 						}
 					}
 				}
@@ -562,6 +578,7 @@ footer {
 		}
 	}
 	@media only screen and (max-width: 600px) {
+		margin: 50px 0 10px 0;
 		.conteudo {
 			margin-bottom: 10px;
 			.desktop {
@@ -644,6 +661,9 @@ footer {
 				color: $rosa-escuro;
 			}
 		}
+	}
+	@media only screen and (max-width: 600px) {
+		margin: 20px 0 0 0;
 	}
 }
 .sobre-desktop {
@@ -1143,7 +1163,11 @@ footer {
 					}
 				}
 			}
-			@media only screen and (max-width: 600px) {
+		}
+		@media only screen and (max-width: 600px) {
+			margin: 50px 0;
+			.agrupador {
+				padding: 50px 0;
 				.topicos {
 					.box {
 						padding: 15px 22px;
@@ -1160,6 +1184,13 @@ footer {
 			}
 		}
 	}
+	.cafe {
+		h2 {
+			@media only screen and (max-width: 600px) {
+				margin-bottom: 40px;
+			}
+		}
+	}
 }
 .sobre {
 	.titulo {
@@ -1171,7 +1202,7 @@ footer {
 		font-family: "Lora", serif;
 		color: $cinza;
 		@media only screen and (max-width: 720px) {
-			font-size: 110px;
+			font-size: 80px;
 		}
 	}
 	.sobre-desktop {
@@ -1209,6 +1240,15 @@ footer {
 	}
 	.cafe {
 		margin-top: 100px;
+	}
+	@media only screen and (max-width: 600px) {
+		padding-top: 120px;
+		.cafe {
+			margin-top: 50px;
+			h2 {
+				margin-bottom: 40px;
+			}
+		}
 	}
 }
 .blog {
@@ -1289,7 +1329,12 @@ footer {
 				}
 			}
 		}
-		@media only screen and (max-width: 770px) {
+	}
+	@media only screen and (max-width: 770px) {
+		.titulo-pagina {
+			margin: 20px 0;
+		}
+		section {
 			justify-content: center;
 			.card {
 				width: fit-content;
@@ -1484,7 +1529,7 @@ footer {
 				display: flex;
 				align-items: center;
 				span {
-					margin-top: 5px;
+					margin-top: 10px;
 					a {
 						margin-left: 10px;
 					}
@@ -1507,6 +1552,20 @@ footer {
 				padding: 30px 0 0 0;
 				margin: 30px 0 0 0;
 			}
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		article {
+			margin-top: 25px;
+			h1 {
+				font-size: 32px;
+			}
+			.conteudo {
+				margin: 30px 0 35px 0;
+			}
+		}
+		aside {
+			margin-top: 50px;
 		}
 	}
 }
@@ -1651,9 +1710,6 @@ footer {
 				justify-content: space-between;
 				align-items: center;
 				flex-flow: wrap;
-				.load {
-					display: none;
-				}
 				.botao-enviar {
 					&:focus-visible {
 						outline: 0;
@@ -1685,6 +1741,22 @@ footer {
 			}
 			.info {
 				text-align: center;
+			}
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		.titulo-pagina {
+			margin: 20px 0;
+		}
+		section {
+			form {
+				.agrupador {
+					flex-direction: column;
+					justify-content: center;
+					.botao-enviar {
+						margin-top: 20px;
+					}
+				}
 			}
 		}
 	}
@@ -1761,7 +1833,7 @@ footer {
 				}
 				@media only screen and (max-width: 770px) {
 					display: flex;
-    				justify-content: center;
+					justify-content: center;
 				}
 			}
 		}
@@ -1796,15 +1868,15 @@ footer {
 		}
 	}
 }
-.page-erro404{
+.page-erro404 {
 	margin: 0 8%;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+	flex-direction: column;
+	align-items: center;
 	height: 52vh;
 	text-align: center;
 	justify-content: center;
-	.desc{
+	.desc {
 		margin: 20px 0 40px 0;
 	}
 }
