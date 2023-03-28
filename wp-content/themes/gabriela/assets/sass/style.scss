@@ -1796,3 +1796,15 @@ footer {
 		}
 	}
 }
+.page-erro404{
+	margin: 0 8%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	height: 52vh;
+	text-align: center;
+	justify-content: center;
+	.desc{
+		margin: 20px 0 40px 0;
+	}
+}

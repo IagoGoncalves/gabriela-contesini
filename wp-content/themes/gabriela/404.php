@@ -8,19 +8,10 @@
 
 get_header(); ?>
 
-	<main id="content" class="<?php echo odin_classes_page_full(); ?>" tabindex="-1" role="main">
-
-			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'odin' ); ?></h1>
-			</header>
-
-			<div class="page-content">
-				<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'odin' ); ?></p>
-
-				<?php get_search_form(); ?>
-			</div><!-- .page-content -->
-
-	</main><!-- #main -->
-
+	<main id="erro404" class="page-erro404" tabindex="-1" role="main">
+		<h2>Página não encontrada</h2>
+		<p class="desc">Não encontramos a página que você tentou acessar.</p>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="botao" rel="direicona para a página de início"><p>Acessar a home</p></a>
+	</main>
 <?php
 get_footer();
