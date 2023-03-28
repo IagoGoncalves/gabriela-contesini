@@ -30,9 +30,12 @@ get_header(); ?>
 											<div class="box-descritivo">
 												<h2><?php the_title(); ?></h2>
 												<h5><?php the_content(); ?></h5>	
-												<a class="botao" href="<?php echo get_post_meta( $post->ID,'url-btn', true )?>" target="_blank" rel="direcionamento do botão">
-													<p><?php echo get_post_meta( $post->ID,'nome-btn', true )?></p>
-												</a>
+												<?php $link = get_post_meta( $post->ID,'url-btn', true )?>
+												<?php if ($link != '') { ?> 
+													<a class="botao" href="<?php echo get_post_meta( $post->ID,'url-btn', true )?>" target="_blank" rel="direcionamento do botão">
+														<p><?php echo get_post_meta( $post->ID,'nome-btn', true )?></p>
+													</a>
+												<?php }?>
 											</div>	
 											<div class="foto-banner">
 												<?php echo odin_thumbnail(1920, 900, get_the_title(), true, false);?>
