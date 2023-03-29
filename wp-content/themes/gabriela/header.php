@@ -25,7 +25,9 @@
 <body <?php body_class(); ?>>
 	<header id="header" class="header" role="banner">
 		<div class="align agrupador">
-			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" alt="Gabriela Contesini" title="Gabriela Contesini"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"/></a>
+			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" alt="Gabriela Contesini" title="Gabriela Contesini">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"/>
+			</a>
 			<ul class="menu">
 				<li class="li-home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
 				<li class="li-sobre"><a href="<?php echo esc_url( home_url( 'sobre' ) ); ?>">Sobre</a></li>
@@ -57,5 +59,10 @@
 				</nav>
 			</div>
 		</div>
-		<a class="contato" href="" target="_blank">Entrar em contato</a>
+		<?php $var = new WP_Query(array('post_type' => 'dados','posts_per_page')); $var->the_post(); 
+			$whatsapp =  get_post_meta( $post->ID,'whatsapp', true );
+		wp_reset_postdata(); ?>
+		<a class="contato" href="https://api.whatsapp.com/send?phone=55<?php echo $whatsapp ?>&text=Olá! Bem-vindo(a) ao meu WhatsApp. Sinta-se à vontade para enviar uma mensagem e agendar sua consulta. Vamos trabalhar juntos(as) em sua jornada de autoconhecimento e bem-estar emocional." alt="<?php echo $whatsapp ?>" title="<?php echo $whatsapp ?>" target="_blank">
+			Entrar em contato
+		</a>
 	</header>
