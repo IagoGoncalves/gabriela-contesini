@@ -27,6 +27,15 @@
 	<?php endif; ?>
 	<?php wp_head(); ?>
 	
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZS0V76W62"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-TZS0V76W62');
+	</script>
 	<script src = 'https://www.google.com/recaptcha/api.js?'></script>
 </head>
 

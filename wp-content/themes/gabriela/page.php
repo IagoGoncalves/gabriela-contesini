@@ -171,7 +171,7 @@ get_header(); ?>
 										</div>
 									</article>
 									<a class="botao" href="https://api.whatsapp.com/send?phone=55<?php echo $whatsapp ?>&text=Olá, vim pelo site Gabriela Contesini" rel="direciona para o whatsapp" alt="<?php echo $whatsapp ?>" title="<?php echo $whatsapp ?>" target="_blank">
-										<p>Agende uma consulta!</p>
+										<p>Agende uma consulta online!</p>
 									</a>
 								</div>	
 								<div class="foto">

@@ -67,7 +67,7 @@ get_header();
 		<section class="cafe">
 			<h2 class="align">Café com a Psi</h2>
 			<article>
-				<?php $args = array('post_type' => 'servico','posts_per_page' => 3);
+				<?php $args = array('post_type' => 'blog','posts_per_page' => 3);
 					$var = new WP_Query($args);
 					if($var->have_posts()):
 						while($var->have_posts()):
