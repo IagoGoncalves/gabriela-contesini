@@ -12,6 +12,14 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="O amor pela psicologia foi transformado em uma missão de vida: levar saúde mental para o maior número de pessoas e fazê-las se sentirem acolhidas e respeitadas. Convido você para, através da psicoterapia, se apropriar da sua saúde mental e do seu bem-estar, afinal todo mundo merece ficar bem!"/>
+    <meta name="abstract" content="O amor pela psicologia foi transformado em uma missão de vida: levar saúde mental para o maior número de pessoas e fazê-las se sentirem acolhidas e respeitadas. Convido você para, através da psicoterapia, se apropriar da sua saúde mental e do seu bem-estar, afinal todo mundo merece ficar bem!">
+    <!-- Tags da empresa -->
+    <meta name="keywords" content="psicologia clínica, psicoterapia, saúde mental, ansiedade, depressão, estresse, terapia cognitivo-comportamental, terapia de casal, psicologia infantil, desenvolvimento humano, psicologia organizaciona, resiliência, psicologia positiva, psicanálise, transtornos alimentares">
+    <meta name="robots" content="index, follow"/>
+    <meta name="rating" content="general">
+	<meta name="distribution" content="global">
+	<meta name="language" content="PT">
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<?php if ( ! get_option( 'site_icon' ) ) : ?>
