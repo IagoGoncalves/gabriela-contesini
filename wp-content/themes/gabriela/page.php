@@ -137,7 +137,7 @@ get_header(); ?>
 									<?php $topico6 = get_post_meta( $post->ID,'topico6', true )?>
 									<?php $topico7 = get_post_meta( $post->ID,'topico7', true )?>
 									<?php $topico8 = get_post_meta( $post->ID,'topico8', true )?>
-									<h5><?php echo $subtitulo?></h5>
+									<h2><?php echo $subtitulo?></h2>
 									<h3><?php the_title(); ?></h3>
 									<?php the_content(); ?>
 									<article class="topicos">

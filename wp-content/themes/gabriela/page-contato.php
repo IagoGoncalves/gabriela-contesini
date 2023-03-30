@@ -23,17 +23,17 @@ get_header();
 			<div class="info">
 				<h2>Meus Contatos</h2>
 				<?php if ($whatsapp != '') { ?> 
-					<a class="whatsapp" href="https://api.whatsapp.com/send?phone=55<?php echo $whatsapp ?>&text=Olá! Bem-vindo(a) ao meu WhatsApp. Sinta-se à vontade para enviar uma mensagem e agendar sua consulta. Vamos trabalhar juntos(as) em sua jornada de autoconhecimento e bem-estar emocional." alt="<?php echo $whatsapp ?>" title="<?php echo $whatsapp ?>" target="_blank">
+					<a class="whatsapp" href="https://api.whatsapp.com/send?phone=55<?php echo $whatsapp ?>&text=Olá! Bem-vindo(a) ao meu WhatsApp. Sinta-se à vontade para enviar uma mensagem e agendar sua consulta. Vamos trabalhar juntos(as) em sua jornada de autoconhecimento e bem-estar emocional." alt="<?php echo $whatsapp ?>" rel="direicona para o whatsapp" title="<?php echo $whatsapp ?>" target="_blank">
 						<p><?php echo $whatsapp?></p>
 					</a>
 				<?php }?>
 				<?php if ($telefone != '') { ?> 
-					<a href="tel:<?php echo $telefone ?>" alt="<?php echo $telefone ?>" title="<?php echo $telefone ?>" target="_blank">    
+					<a href="tel:<?php echo $telefone ?>" alt="<?php echo $telefone ?>" rel="direicona para o telefone" title="<?php echo $telefone ?>" target="_blank">    
 						<p class="telefone"><?php echo $telefone?></p>
 					</a>
 				<?php }?>
 				<?php if ($email != '') { ?> 
-					<a href="mailto:<?php echo $email ?>" target="_blank">
+					<a href="mailto:<?php echo $email ?>" alt="<?php echo $email ?>" rel="direicona para o email" target="_blank">
 						<p><?php echo $email?></p>
 					</a>
 				<?php }?>
