@@ -15,7 +15,7 @@
 	<meta name="description" content="O amor pela psicologia foi transformado em uma missão de vida: levar saúde mental para o maior número de pessoas e fazê-las se sentirem acolhidas e respeitadas. Convido você para, através da psicoterapia, se apropriar da sua saúde mental e do seu bem-estar, afinal todo mundo merece ficar bem!"/>
     <meta name="abstract" content="O amor pela psicologia foi transformado em uma missão de vida: levar saúde mental para o maior número de pessoas e fazê-las se sentirem acolhidas e respeitadas. Convido você para, através da psicoterapia, se apropriar da sua saúde mental e do seu bem-estar, afinal todo mundo merece ficar bem!">
     <!-- Tags da empresa -->
-    <meta name="keywords" content="psicologia clínica, psicoterapia, saúde mental, ansiedade, depressão, estresse, terapia cognitivo-comportamental, terapia de casal, psicologia infantil, desenvolvimento humano, psicologia organizaciona, resiliência, psicologia positiva, psicanálise, transtornos alimentares">
+    <meta name="keywords" content="psicologa em extrema, psicologa em atibaia, psicologa em são paulo, psicologa em jundiai, psicologa na região, psicologa em bragança paulista, psicologa online, psicologa, psicologia clínica, psicoterapia, saúde mental, ansiedade, depressão, estresse, terapia cognitivo-comportamental, terapia de casal, psicologia infantil, desenvolvimento humano, psicologia organizaciona, resiliência, psicologia positiva, psicanálise, transtornos alimentares">
     <meta name="robots" content="index, follow"/>
     <meta name="rating" content="general">
 	<meta name="distribution" content="global">
