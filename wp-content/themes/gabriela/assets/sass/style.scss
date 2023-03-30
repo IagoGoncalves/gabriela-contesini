@@ -1051,6 +1051,11 @@ footer {
 					.primeira-coluna {
 						margin-right: 80px;
 					}
+					.topico-lista {
+						svg {
+							margin-right: 10px;
+						}
+					}
 				}
 			}
 			.foto {
@@ -1176,6 +1181,9 @@ footer {
 						align-items: center;
 						font-weight: 600;
 						margin-bottom: 25px;
+						svg {
+							margin-right: 10px;
+						}
 					}
 				}
 			}

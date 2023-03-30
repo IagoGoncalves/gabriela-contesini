@@ -42,8 +42,8 @@
 <body <?php body_class(); ?>>
 	<header id="header" class="header" role="banner">
 		<div class="align agrupador">
-			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" alt="Gabriela Contesini" title="Gabriela Contesini">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"/>
+			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" alt="Gabriela Contesini" rel="direicona para a pagina inicial do site" title="Gabriela Contesini">
+				<img alt="Gabriela Contesini" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.svg"/>
 			</a>
 			<ul class="menu">
 				<li class="li-home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
