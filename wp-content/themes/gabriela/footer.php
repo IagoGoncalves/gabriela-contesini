@@ -43,7 +43,7 @@
 			<div class="info">
 				<h4>Gabriela Domingues Contesini</h4>
 				<p class="crp">CRP 06/152232</p>
-				<p>O amor pela psicologia transformado em uma missão de vida: levar saúde mental para o maior número de pessoas e fazê-las se sentirem acolhidas e respeitadas. </p>
+				<p class="texto">O amor pela psicologia transformado em uma missão de vida: levar saúde mental para o maior número de pessoas e fazê-las se sentirem acolhidas e respeitadas. </p>
 			</div>
 			<div class="sigame">
 				<h4>Siga-me</h4>
