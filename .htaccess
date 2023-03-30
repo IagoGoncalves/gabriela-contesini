@@ -1,3 +1,8 @@
+# BEGIN Imagify: webp file type
+<IfModule mod_mime.c>
+	AddType image/webp .webp
+</IfModule>
+# END Imagify: webp file type
 
 # BEGIN WordPress
 # As diretrizes (linhas) entre "BEGIN WordPress" e "END WordPress" são
