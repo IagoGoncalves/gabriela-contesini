@@ -494,6 +494,9 @@ footer {
 				.info {
 					margin: 0 30px;
 					width: 32%;
+					.texto {
+						display: none;
+					}
 				}
 			}
 		}
@@ -506,11 +509,6 @@ footer {
 			}
 			article {
 				padding: 35px;
-				.info {
-					.texto {
-						display: none;
-					}
-				}
 				.sigame {
 					display: flex;
 					align-items: center;
