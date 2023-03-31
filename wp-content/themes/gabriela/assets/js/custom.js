@@ -27,17 +27,17 @@ jQuery(document).ready(function ($) {
 		$(".li-sobre").removeClass("active");
 		$(".li-cafe").removeClass("active");
 		$(".li-contato").addClass("active");
-	}
-	// Efeito de animação formulário
-	$(".input2").each(function () {
-		$(this).on("blur", function () {
-			if ($(this).val().trim() != "") {
-				$(this).addClass("has-val");
-			} else {
-				$(this).removeClass("has-val");
-			}
+		// Efeito de animação formulário
+		$(".input2").each(function () {
+			$(this).on("blur", function () {
+				if ($(this).val().trim() != "") {
+					$(this).addClass("has-val");
+				} else {
+					$(this).removeClass("has-val");
+				}
+			});
 		});
-	});
+	}
 	//botão buscar 1
 	$("#botao").click(function (e) {
 		$(this).siblings().toggleClass("ativo");
