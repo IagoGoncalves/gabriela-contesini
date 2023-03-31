@@ -1491,6 +1491,16 @@ footer {
 			p {
 				text-align: justify;
 			}
+			ol,
+			ul {
+				color: #848484;
+				font-size: 20px;
+				list-style: auto;
+				margin: 8px 0 0 25px;
+				li {
+					margin-bottom: 8px;
+				}
+			}
 		}
 	}
 	aside {
