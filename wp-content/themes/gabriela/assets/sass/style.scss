@@ -132,9 +132,6 @@ section:focus-visible {
 	margin-bottom: 15px;
 	font-weight: 600;
 	color: $preto;
-	img {
-		margin-right: 10px;
-	}
 }
 .titulo-pagina {
 	font-family: "Lora", serif;
@@ -509,6 +506,11 @@ footer {
 			}
 			article {
 				padding: 35px;
+				.info {
+					.texto {
+						display: none;
+					}
+				}
 				.sigame {
 					display: flex;
 					align-items: center;
@@ -525,6 +527,11 @@ footer {
 			}
 			article {
 				border-radius: 16px;
+				.info {
+					.texto {
+						display: block;
+					}
+				}
 			}
 		}
 	}
@@ -731,14 +738,13 @@ footer {
 			}
 		}
 	}
-	@media only screen and (max-width: 1900px) {
-	}
-	@media only screen and (max-width: 1265px) {
+	@media only screen and (max-width: 1440px) {
 		margin: 8% 4%;
-		align-items: flex-start;
+		align-items: center;
 		aside {
 			h2 {
 				margin-top: 20px;
+				font-size: 48px;
 			}
 			h5 {
 				margin: 10px 0 20px 0;
@@ -1188,6 +1194,11 @@ footer {
 						svg {
 							margin-right: 10px;
 						}
+					}
+				}
+				@media only screen and (max-width: 1440px) {
+					h2 {
+						font-size: 48px;
 					}
 				}
 			}
