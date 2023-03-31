@@ -21,7 +21,7 @@ get_header();
 			</div>
 			<aside>
 				<h2>Gabriela Domingues Contesini</h2>
-				<h5>CRP 06/152232</h5>
+				<h3>CRP 06/152232</h3>
 				<?php the_content()?>
 				<div>
 					<a href="<?php echo $instagram ?>" class="instagram" rel="direicona para a página do instagram" alt="Instagram" title="Instagram" target="_blank">
@@ -39,7 +39,7 @@ get_header();
 		</section>
 		<section class="sobre-mobile">
 			<h2>Gabriela Domingues Contesini</h2>
-			<h5>CRP 06/152232</h5>
+			<h3>CRP 06/152232</h3>
 			<div class="imagem">
 				<?php echo odin_thumbnail(420, 510, get_the_title(), true, false);?>
 			</div>
@@ -65,7 +65,7 @@ get_header();
 			<p><?php echo get_post_meta( $post->ID,'bloco3', true )?></p>
 		</section>
 		<section class="cafe">
-			<h2 class="align">Café com a Psi</h2>
+			<h2 class="align titulo-cafe">Café com a Psi</h2>
 			<article>
 				<?php $args = array('post_type' => 'blog','posts_per_page' => 3);
 					$var = new WP_Query($args);
@@ -76,7 +76,7 @@ get_header();
 									<div class='foto'><?php echo odin_thumbnail(510, 362, get_the_title(), true, false);?></div>
 									<div class="agrupador">
 										<p class="data">Postado em <?php the_time('d\/m\/Y') ?></p>
-										<h5><?php the_title()?></h5>
+										<h2><?php the_title()?></h2>
 										<p><?php echo excerpt(18); ?></p>
 										<span href="#" class="botao" target="_blank"><p>Saiba mais</p></span>
 									</div>

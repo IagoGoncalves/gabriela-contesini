@@ -34,9 +34,6 @@ $cinza: #f1f1f1;
 	background: $rosa-escuro;
 }
 h2 {
-	color: $preto;
-	font-size: 80px;
-	font-family: "Lora", serif;
 	@media only screen and (max-width: 1265px) {
 		font-size: 48px;
 	}
@@ -45,35 +42,12 @@ h2 {
 	}
 }
 h3 {
-	color: $preto;
-	font-size: 48px;
-	font-weight: 700;
 	@media only screen and (max-width: 1265px) {
 		font-size: 32px;
 	}
 	@media only screen and (max-width: 600px) {
 		font-size: 24px;
 	}
-}
-h4 {
-	color: $preto;
-	font-size: 32px;
-	font-family: "Lora", serif;
-}
-h5 {
-	color: $rosa-escuro;
-	font-size: 24px;
-	font-family: "Lora", serif;
-	@media only screen and (max-width: 1265px) {
-		font-size: 20px;
-	}
-	@media only screen and (max-width: 600px) {
-		font-size: 16px;
-	}
-}
-h6 {
-	color: $cinza-escuro;
-	font-size: 16px;
 }
 p {
 	color: $cinza-escuro;
@@ -112,6 +86,7 @@ section:focus-visible {
 		}
 	}
 	@media only screen and (max-width: 600px) {
+		margin-top: 20px;
 		padding: 10px 30px;
 		p {
 			font-size: 18px;
@@ -417,6 +392,9 @@ footer {
 		justify-content: space-between;
 		align-items: center;
 		margin-bottom: 50px;
+		h4 {
+			font-family: "Lora", serif;
+		}
 		.logo {
 			margin: 0 70px 0 100px;
 		}
@@ -444,6 +422,7 @@ footer {
 				width: 30%;
 				.crp {
 					margin: 10px 0 20px 0;
+					color: #dcb4a0;
 				}
 			}
 			.sigame {
@@ -709,8 +688,14 @@ footer {
 	}
 	aside {
 		width: 50%;
-		h5 {
+		h2 {
+			font-family: "Lora", serif;
+		}
+		h3 {
 			margin: 5px 0 35px 0;
+			color: #dcb4a0;
+			font-size: 24px;
+			font-family: "Lora", serif;
 		}
 		p {
 			text-align: justify;
@@ -760,8 +745,14 @@ footer {
 	text-align: center;
 	z-index: 1;
 	position: relative;
-	h5 {
+	h2 {
+		font-family: "Lora", serif;
+	}
+	h3 {
 		margin: 12px 0 25px 0;
+		color: #dcb4a0;
+		font-size: 16px;
+		font-family: "Lora", serif;
 	}
 	.imagem {
 		img {
@@ -805,7 +796,9 @@ footer {
 	}
 }
 .cafe {
-	h2 {
+	.titulo-cafe {
+		font-size: 80px;
+		font-family: "Lora", serif;
 		margin-bottom: 80px;
 		&:before {
 			content: "";
@@ -858,10 +851,12 @@ footer {
 					font-size: 16px;
 					color: #a9a9a9;
 				}
-				h5 {
+				h2 {
 					color: $preto;
 					font-weight: 600;
+					font-size: 24px;
 					margin: 15px 0;
+					font-family: "Lora", serif;
 				}
 				span {
 					cursor: pointer;
@@ -908,6 +903,16 @@ footer {
 			margin: 0 40px;
 		}
 	}
+	@media only screen and (max-width: 1265px) {
+		.titulo-cafe {
+			font-size: 48px;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		.titulo-cafe {
+			font-size: 32px;
+		}
+	}
 }
 .home {
 	.banner {
@@ -924,6 +929,8 @@ footer {
 						h2 {
 							font-family: "Raleway", sans-serif;
 							font-weight: 700;
+							color: #26272a;
+							font-size: 80px;
 						}
 						h5 {
 							font-family: "Raleway", sans-serif;
@@ -1047,11 +1054,14 @@ footer {
 				width: 100%;
 				padding: 40px 70px 40px 150px;
 				h2 {
-					color: $rosa-escuro;
-					font-size: 24px;
+					margin: 20px 0 25px 0;
+					font-size: 48px;
+					font-weight: 700;
 				}
 				h3 {
-					margin: 20px 0 25px 0;
+					color: $rosa-escuro;
+					font-size: 24px;
+					font-family: "Lora", serif;
 				}
 				.topicos {
 					margin: 20px 0 35px 0;
@@ -1133,6 +1143,9 @@ footer {
 			@media only screen and (max-width: 600px) {
 				.box-descritivo {
 					padding: 40px;
+					h2 {
+						font-size: 24px;
+					}
 				}
 				&:nth-child(2) {
 					.box-descritivo {
@@ -1163,10 +1176,15 @@ footer {
 					padding: 20px 40px;
 					span {
 						margin-left: 40px;
-						h5 {
-							color: $preto;
+						h3 {
+							font-size: 24px;
+							font-family: "Lora", serif;
 							font-weight: 600;
 							margin-bottom: 15px;
+						}
+						p {
+							color: #848484;
+							font-size: 16px;
 						}
 					}
 				}
@@ -1180,6 +1198,7 @@ footer {
 				width: 35%;
 				h2 {
 					margin-bottom: 40px;
+					font-family: "Lora", serif;
 				}
 				.beneficios {
 					margin-top: 60px;
@@ -1242,6 +1261,12 @@ footer {
 				.topicos {
 					.box {
 						padding: 15px 22px;
+						span {
+							h3 {
+								font-size: 18px;
+								margin-bottom: 5px;
+							}
+						}
 						img {
 							max-width: 20%;
 						}
@@ -1250,6 +1275,9 @@ footer {
 				.box-descritivo {
 					.beneficios {
 						margin-top: 20px;
+						.topico-lista {
+							width: 100%;
+						}
 					}
 				}
 			}
@@ -1359,7 +1387,7 @@ footer {
 				p {
 					font-size: 12px;
 				}
-				h6 {
+				h2 {
 					font-family: "Lora", serif;
 					font-size: 20px;
 					color: $preto;
@@ -1505,9 +1533,20 @@ footer {
 				color: #848484;
 				font-size: 20px;
 				list-style: auto;
+				line-height: 25px;
 				margin: 8px 0 0 25px;
 				li {
-					margin-bottom: 8px;
+					margin-bottom: 12px;
+				}
+				@media only screen and (max-width: 1265px) {
+					p {
+						font-size: 18px;
+					}
+				}
+				@media only screen and (max-width: 1265px) {
+					p {
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -1517,7 +1556,9 @@ footer {
 		margin-top: 80px;
 		display: flex;
 		flex-direction: column;
-		h4 {
+		h2 {
+			font-family: "Lora", serif;
+			font-size: 32px;
 			margin-bottom: 40px;
 			font-weight: 700;
 		}
@@ -1560,6 +1601,7 @@ footer {
 						font-size: 20px;
 						font-weight: 500;
 						transition: all 0.2s;
+						font-family: "Lora", serif;
 					}
 					p {
 						margin-top: 5px;
@@ -1702,6 +1744,7 @@ footer {
 				font-size: 40px;
 				font-weight: 500;
 				margin-bottom: 30px;
+				font-family: "Lora", serif;
 			}
 			.telefone {
 				margin: 20px 0;
@@ -1898,6 +1941,7 @@ footer {
 		margin: 0 8%;
 		.entry-header {
 			h2 {
+				font-family: "Lora", serif;
 				font-size: 32px;
 				a {
 					color: $rosa-escuro;
@@ -1972,9 +2016,11 @@ footer {
 		text-align: center;
 	}
 	.card-body {
-		h5 {
+		h2 {
 			font-size: 32px;
 			margin-bottom: 5px;
+			font-family: "Lora", serif;
+			color: $rosa-escuro;
 		}
 		a {
 			margin: 15px 0 50px 0;

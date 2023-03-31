@@ -34,7 +34,7 @@ get_header(); ?>
 					$query->the_post(); ?>
 						<div class="card mb-3">
 							<div class="card-body">
-								<h5 class="card-title"><?php the_title(); ?></h5>
+								<h2 class="card-title"><?php the_title(); ?></h2>
 								<p class="card-text"><?php the_excerpt(); ?></p>
 								<a href="<?php the_permalink(); ?>" class="btn btn-primary">Ler mais</a>
 							</div>

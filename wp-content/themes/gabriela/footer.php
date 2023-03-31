@@ -73,7 +73,7 @@
 			</div>
 			<div class="contato">
 				<h4>Entre em contato</h4>
-				<a href="tel:<?php echo $telefone ?>" alt="<?php echo $telefone ?>" rel="direicona para o telefone" title="<?php echo $telefone ?>" target="_blank">    
+				<a href="tel:<?php echo $telefone ?>" alt="telefone da psicologa" rel="direicona para o telefone" title="<?php echo $telefone ?>" target="_blank">    
 					<p><?php echo $telefone?></p>
 				</a>
 				<a href="mailto:<?php echo $email ?>" alt="<?php echo $email ?>" rel="direicona para o email" target="_blank">

@@ -105,7 +105,7 @@ get_header();
 					</svg>
 
 					<div class="botao-enviar">
-						<button class="botao" value="submit"><p>Enviar</p></button>
+						<button class="botao" value="submit" onsubmit="ativarForm(); return false" ><p>Enviar</p></button>
 					</div>
 				</div>
 			</form>

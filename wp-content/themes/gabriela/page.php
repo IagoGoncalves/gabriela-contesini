@@ -68,7 +68,7 @@ get_header(); ?>
 			</div>
 			<aside>
 				<h2>Gabriela Domingues Contesini</h2>
-				<h5>CRP 06/152232</h5>
+				<h3>CRP 06/152232</h3>
 				<?php the_content()?>
 				<div>
 					<a href="<?php echo $instagram ?>" class="instagram" rel="direicona para o perfil do instagram" alt="Instagram" title="Instagram" target="_blank">
@@ -87,7 +87,7 @@ get_header(); ?>
 		</section>
 		<section class="sobre-mobile">
 			<h2>Gabriela Domingues Contesini</h2>
-			<h5>CRP 06/152232</h5>
+			<h3>CRP 06/152232</h3>
 			<div class="imagem">
 				<div class="swiper-container swiper-banner">
 					<div class="swiper-wrapper">
@@ -137,8 +137,8 @@ get_header(); ?>
 									<?php $topico6 = get_post_meta( $post->ID,'topico6', true )?>
 									<?php $topico7 = get_post_meta( $post->ID,'topico7', true )?>
 									<?php $topico8 = get_post_meta( $post->ID,'topico8', true )?>
-									<h2><?php echo $subtitulo?></h2>
-									<h3><?php the_title(); ?></h3>
+									<h3><?php echo $subtitulo?></h3>
+									<h2><?php the_title(); ?></h2>
 									<?php the_content(); ?>
 									<article class="topicos">
 										<div class="primeira-coluna">
@@ -242,24 +242,24 @@ get_header(); ?>
 							<?php $foto = get_post_meta( $post->ID,'image1', true );?>				
 							<img loading="lazy" alt="ícone de cérebro" src="<?php echo odin_get_image_url( $foto, 120, 120, false, true);?>" >
 							<span>
-								<h5><?php echo $titulo1?></h5>
-								<h6><?php echo $subtitulo1?></h6>
+								<h3><?php echo $titulo1?></h3>
+								<p><?php echo $subtitulo1?></p>
 							</span>
 						</div>
 						<div class="box box2">
 							<?php $foto = get_post_meta( $post->ID,'image2', true );?>				
 							<img loading="lazy" alt="ícone da psicologia" src="<?php echo odin_get_image_url( $foto, 120, 120, false, true);?>" >
 							<span>
-								<h5><?php echo $titulo2?></h5>
-								<h6><?php echo $subtitulo2?></h6>
+								<h3><?php echo $titulo2?></h3>
+								<p><?php echo $subtitulo2?></p>
 							</span>
 						</div>
 						<div class="box box3">
 							<?php $foto = get_post_meta( $post->ID,'image3', true );?>				
 							<img loading="lazy" alt="ícone face humana" src="<?php echo odin_get_image_url( $foto, 120, 120, false, true);?>" >
 							<span>
-								<h5><?php echo $titulo3?></h5>
-								<h6><?php echo $subtitulo3?></h6>
+								<h3><?php echo $titulo3?></h3>
+								<p><?php echo $subtitulo3?></p>
 							</span>
 						</div>
 					</div>
@@ -301,7 +301,7 @@ get_header(); ?>
 			<?php wp_reset_postdata(); ?>
 		</section>
 		<section class="cafe">
-			<h2 class="align">Café com a Psi</h2>
+			<h2 class="align titulo-cafe">Café com a Psi</h2>
 			<article>
 				<?php $args = array('post_type' => 'blog','posts_per_page' => 3);
 					$var = new WP_Query($args);
@@ -312,7 +312,7 @@ get_header(); ?>
 									<div class='foto'><?php echo odin_thumbnail(510, 362, get_the_title(), true, false);?></div>
 									<div class="agrupador">
 										<p class="data">Postado em <?php the_time('d\/m\/Y') ?></p>
-										<h5><?php the_title()?></h5>
+										<h2><?php the_title()?></h2>
 										<p><?php echo excerpt(18); ?></p>
 										<span class="botao" target="_blank"><p>Saiba mais</p></span>
 									</div>

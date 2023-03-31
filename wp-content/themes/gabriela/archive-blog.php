@@ -32,7 +32,7 @@ get_header(); ?>
 								<div class="foto"><?php echo odin_thumbnail(460, 370, get_the_title(), true, false);?></div>
 								<div class="box">
 									<p class="data">Postado em <?php the_time('d\/m\/Y') ?></p>
-									<h6><?php the_title()?></h6>
+									<h2><?php the_title()?></h2>
 									<span class="botao"><p>Ler mais</p></span>
 								</div>
 							</a>

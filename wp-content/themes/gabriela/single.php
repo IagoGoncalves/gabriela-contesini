@@ -63,7 +63,7 @@ get_header(); ?>
 		</article>
 		<aside>
 			<form method="get" class="navbar-form navbar-right" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
-				<h4>Procurar</h4>
+				<h2>Procurar</h4>
 				<div class="form-group">
 					<input type="search" value="<?php echo get_search_query(); ?>" class="form-control" name="s" id="navbar-search" autocomplete="off" placeholder="Pesquisar no site"/>
 				</div>
@@ -74,7 +74,7 @@ get_header(); ?>
 				</button>
 			</form>
 			<div class="post-recentes">
-				<h4>Posts Recentes</h4>
+				<h2>Posts Recentes</h4>
 				<?php 
 					$current_post_id = get_the_ID();
 					$args = array('post_type' => 'blog', 'post__not_in' => array($current_post_id), 'posts_per_page' => 3);
@@ -100,7 +100,7 @@ get_header(); ?>
 				wp_reset_postdata(); ?>
 			</div>
 			<div class="tags">
-				<h4>Tags</h4>
+				<h2>Tags</h4>
 				<div><?php the_tags('', '')?></div>
 			</div>
 		</aside>

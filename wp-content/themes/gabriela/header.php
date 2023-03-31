@@ -54,7 +54,7 @@
 			<div class="navigation">
 				<input type="checkbox" class="navigation__checkbox" id="nav-toggle">
 				<label for="nav-toggle" class="navigation__button">
-					<span class="navigation__icon" aria-label="toggle navigation menu"></span>
+					<span class="navigation__icon"></span>
 				</label>
 				<div class="navigation__background"></div>
 
